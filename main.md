@@ -16,7 +16,7 @@ docker rmi nginx      # Remove an image
 ```
 ## 2️⃣ Image Management
 
-```
+```bash
 docker images           # List all images  
 docker image inspect nginx  # Inspect image details  
 docker image history nginx  # View image history (layers)  
@@ -30,7 +30,7 @@ docker load -i nginx.tar  # Load an image from a tar file
 
 ## 3️⃣ Container Management
 
-```
+```bash
 docker inspect my_container   # Get detailed container information  
 docker logs my_container      # View container logs  
 docker top my_container       # Show running processes inside the container  
@@ -46,7 +46,7 @@ docker wait my_container      # Wait until a container stops
 
 ## 4️⃣ Docker Networking
 
-```
+```bash
 docker network ls               # List networks  
 docker network create my_network  # Create a new network  
 docker network inspect my_network # View network details  
@@ -57,7 +57,7 @@ docker network rm my_network  # Remove a network
 
 ## 5️⃣ Docker Volumes & Storage
 
-```
+```bash
 docker volume ls         # List all volumes  
 docker volume create my_volume  # Create a new volume  
 docker volume inspect my_volume # View volume details  
@@ -67,7 +67,7 @@ docker run -d --mount type=bind,source="$(pwd)"/data,target=/app/data nginx  # U
 ```
 ## 6️⃣ Docker Compose (Multi-container Apps)
 
-```
+```bash
 docker-compose up -d       # Start all services in the background  
 docker-compose down        # Stop and remove containers, networks, volumes  
 docker-compose logs -f     # View real-time logs of services  
@@ -77,7 +77,7 @@ docker-compose restart my_service  # Restart a service
 
 ## 7️⃣ Docker Swarm (Orchestration)
 
-```
+```bash
 docker swarm init                 # Initialize Docker Swarm mode  
 docker node ls                     # List nodes in the Swarm  
 docker service create --name my_service -p 8080:80 nginx  # Create a service  
@@ -89,7 +89,7 @@ docker stack rm my_stack            # Remove a stack
 ```
 ## 8️⃣ Docker Security & User Management
 
-```
+```bash
 docker login                        # Login to Docker Hub  
 docker logout                       # Logout from Docker Hub  
 docker secret create my_secret file.txt  # Create a secret  
@@ -100,7 +100,7 @@ docker secret rm my_secret           # Remove a secret
 
 ## 9️⃣ Docker System & Troubleshooting
 
-```
+```bash
 docker system df       # Show Docker disk usage  
 docker system prune    # Remove unused data (containers, images, networks)  
 docker events         # Show real-time events from the Docker daemon  
